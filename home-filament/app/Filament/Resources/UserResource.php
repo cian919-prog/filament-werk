@@ -16,12 +16,13 @@ use Filament\Schemas\Schema;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\QueryBuilder;
 use Filament\Tables\Table;
+use BackedEnum;
 
 class UserResource extends Resource
 {
     protected static ?string $model = User::class;
 
-    protected static string|\UnitEnum|null $navigationIcon = 'heroicon-o-users';
+    protected static string|BackedEnum|null $navigationIcon = 'heroicon-o-users';
 
     protected static ?string $navigationLabel = 'Gebruikers';
 
@@ -141,5 +142,6 @@ class UserResource extends Resource
             ->deferColumnManager(false)
             ->persistColumnSearchesInSession()
             ->defaultSort('created_at', 'desc');
+            
     }
 }
