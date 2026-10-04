@@ -1,0 +1,39 @@
+@import '../../../../vendor/filament/filament/resources/css/theme.css';
+
+@source '../../../../app/Filament/**/*';
+@source '../../../../resources/views/**/*';
+
+/* Match your application background */
+.fi-body {
+    background: rgb(241 245 249);
+}
+
+/* Match your white application sidebar */
+.fi-sidebar {
+    background: white;
+    border-right: 1px solid rgb(226 232 240);
+}
+
+/* Match your header */
+.fi-topbar {
+    background: rgb(255 255 255 / 95%);
+    border-bottom: 1px solid rgb(226 232 240);
+}
+
+/* Match your application typography */
+.fi-body,
+.fi-sidebar,
+.fi-topbar {
+    font-family: inherit;
+}
+
+/* Indigo active navigation */
+.fi-sidebar-item-active {
+    background: rgb(238 242 255);
+    color: rgb(67 56 202);
+}
+
+/* Similar rounded navigation */
+.fi-sidebar-item-button {
+    border-radius: 0.5rem;
+}
